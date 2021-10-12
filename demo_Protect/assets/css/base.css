@@ -1,0 +1,35 @@
+:root{
+    --text-color: #333
+}
+
+*{
+    box-sizing: inherit; /* Kế thừa tử thẻ chứa nó */
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html{
+    font-size: 62.5%; /* 1rem bằng 10px */
+    line-height: 1.6rem;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* responsive tương thích các khung hình khác nhau */
+
+.grip{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grip__full-width{
+    width: 100%;
+}
+
+.grip__gow{
+    display: flex;
+    flex-wrap: wrap;
+}
+

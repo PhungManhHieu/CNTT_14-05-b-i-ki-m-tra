@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/signup.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+    <div class="hero1">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Đăng nhập</button>
+                <button type="button" class="toggle-btn" onclick="register()">Đăng kí</button>
+            </div>
+            <div class="social-icons">
+                <img src="./assets/img/fbconen.png" alt="">
+                <img src="./assets/img/twconen.png" alt="">
+                <img src="./assets/img/google.png" alt="">
+            </div>
+            <form id="login" action="" class="input-group">
+                <input class="input-field" type="email" placeholder="Nhập Email tại đây">
+                <input class="input-field" type="password" placeholder="Nhập mật khẩu ở đây">
+                <input type="checkbox" class="chech-box"><span>Renember Password</span>
+                <button type="submit" class="submit-btn">Đăng nhập</button>
+            </form>
+            <form id="register" action="" class="input-group">
+                <input class="input-field" type="email" placeholder="Nhập Email tại đây">
+                <input class="input-field" type="password" placeholder="Nhập mật khẩu ở đây">
+                <input class="input-field" type="password" placeholder="Nhập lại khẩu ở đây">
+                <input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+    
+    function register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+    }
+
+    </script>
+</body>
+</html>
